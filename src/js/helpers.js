@@ -8,35 +8,6 @@ const timeout = function (s) {
   });
 };
 
-// export const getJSON = async function (url) {
-//   try {
-//     const fetchPromise = fetch(url);
-//     const res = await Promise.race([timeout(TIMEOUT_SECS), fetchPromise]);
-//     const data = await res.json();
-//     if (!res.ok)
-//       throw new Error(`We could not find this recipe. Try another one, please`);
-//     return data;
-//   } catch (error) {
-//     throw error;
-//   }
-// };
-// export const sendJSON = async function (url, uploadData) {
-//   try {
-//     const fetchPromise = fetch(url, {
-//       method: `POST`,
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify(uploadData),
-//     });
-//     const res = await Promise.race([timeout(TIMEOUT_SECS), fetchPromise]);
-//     const data = await res.json();
-//     if (!res.ok) throw new Error(`${data.message}, ${res.status}`);
-//     return data;
-//   } catch (error) {
-//     throw error;
-//   }
-// };
 export const AJAX = async function (url, uploadData = undefined) {
   try {
     const fetchPromise = uploadData

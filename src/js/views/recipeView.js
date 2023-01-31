@@ -18,7 +18,6 @@ class RecipeView extends View {
       //getting a number we should update servings to from the data attribute of a button (if it is minus -1, if it is plus +1)
       const updateTo = clicked.dataset.update_to;
       if (updateTo < 1 || updateTo > 20) return;
-      // if(clicked.classList.includes(``))
       handler(updateTo);
     });
   }

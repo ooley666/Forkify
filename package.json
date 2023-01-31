@@ -4,9 +4,9 @@
   "description": "Recipe application",
   "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-scope-hoist --dist-dir ./dist"
+    "build": "parcel build index.html --no-scope-hoist --dist-dir ./dist",
+    "publish": "surge --domain https://forkify-by-ooley.surge.sh/"
   },
   "author": "Maksym Lavrov",
   "license": "ISC",
